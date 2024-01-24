@@ -14,8 +14,15 @@
 
 .navbar .logo {
     height: 4rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
+    font-family: 'MonteCarlo';
+}
+
+.navbar .logo img {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1.5rem;
 }
 
 .blue_letter {
@@ -67,12 +74,15 @@
 /* intro section */
 .intro {
     margin-top: 5rem !important;
-    height: 40rem;
+    height: 43rem;
     background-color: #edf2f8;
+    /* padding-bottom: 5rem; */
 }
 
 .intro .name {
     font-size: 3rem;
+    font-family: 'Lancelot', serif;
+
 }
 
 .intro .image {
@@ -110,12 +120,6 @@
 
 .intro img {
     transition: transform 2s ease-in-out;
-}
-
-/* about */
-.animated_img {
-    height: 80%;
-    width: 70%;
 }
 
 /* techstack section */
@@ -180,6 +184,11 @@
     transition: transform 1s ease-in-out;
 }
 
+/* projects */
+.each_video div {
+    background-color: #1a202c;
+}
+
 /* Academics */
 
 
@@ -194,6 +203,16 @@
 /* Footer section */
 .footer {
     background-color: white;
+}
+
+.footer_heading {
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 991px) {
+    .footer_heading {
+        font-size: 1.8rem;
+    }
 }
 
 .blue_letter {
@@ -266,6 +285,12 @@
     position: fixed;
     bottom: 0%;
     left: 4%;
+}
+
+@media only screen and (max-width: 850px) {
+    .links div {
+        left: 5%;
+    }
 }
 
 .links a {
