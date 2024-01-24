@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vaishnavi Muley">
+    <meta name="keywords" content="web development, programming, HTML, CSS, Frontend,">
+    <meta name="description" content="Portfolio of Vaishnavi Muley">
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <title>Vaishnavi Muley</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light navbar-expand-lg position-fixed w-100 p-2">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="navbar-brand logo d-flex text-white align-items-center">
+                <div class="blue_letter">V</div>
+                <div class="red_letter">AISHNAVI</div>
+                <div class="blue_letter ms-2">M</div>
+                <div class="red_letter">ULEY</div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" onclick="toggler()" id="toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span>
+                <i class="fa-regular fa-xmark d-none fa-3x" id="cross" style="color: #000000;"
+                    onclick="closeNavbar()"></i>
+            </span>
+            <div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+                    <li class="nav-item ms-5 fw-semibold">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item ms-5 fw-semibold">
+                        <a class="nav-link" href="#" onclick="scrollToSection('about')">ABOUT</a>
+                    </li>
+                    <li class="nav-item ms-5 fw-semibold">
+                        <a class="nav-link" href="#" onclick="scrollToSection('techstack')">TECH STACK</a>
+                    </li>
+                    <li class="nav-item ms-5 fw-semibold">
+                        <a class="nav-link" href="#" onclick="scrollToSection('project')">PROJECT</a>
+                    </li>
+                    <li class="nav-item ms-5 fw-semibold">
+                        <a class="nav-link" href="#" onclick="scrollToSection('project')"> ACADEMICS</a>
+                    </li>
+                    <li class="nav-item ms-5 fw-semibold">
+                        <a class="nav-link" href="#" onclick="scrollToSection('footer')">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Intro section -->
+    <div class='container-fluid'>
+        <div class='row intro d-flex'>
+            <div class="col-lg-6 d-flex flex-column justify-content-center mt-md-5">
+                <div class='text-start mx-auto ps-5'>
+                    <div class='blue_letter fs-2 fw-bold mt-3'>Hi, I am</div>
+                    <div class='blue_letter name fw-bolder mt-3'>Vaishnavi Muley</div>
+                    <div class='red_letter fs-3 mt-3 fw-bold'>Web Developer</div>
+                    <a href="./components/navbar/CV Vaishnavi Muley.pdf" download="CV Vaishnavi Muley.pdf">
+                        <button class="btn-danger btn text-light fs-5 mt-4">RESUME</button>
+                    </a>
+                </div>
+            </div>
+            <div class='col-lg-6 d-flex justify-content-center align-items-center mt-sm-1'>
+                <div class='image d-flex justify-content-center align-items-end'>
+                    <img src='./images/emp1.jpg' alt='my photo' />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class='fw-bold red_letter'>Who <span class='blue_letter'>I am</span></h1>
+                <div class='custom-h mx-auto mt-0'></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-5 d-flex justify-content-center align-items-center">
+                <img src="images/anime.jpg" alt="" class="animated_img">
+            </div>
+            <div class="col-md-6 text-left mt-5 ps-4">
+                <p class="text-justify">
+                    Hello, I'm Vaishnavi Muley, a results-driven Full-Stack Web Developer deeply immersed in the world
+                    of web development.<br /><br />
+
+                    With practical expertise in JavaScript,Bootstrap5 React.js, HTML5, and CSS3, jQuery.
+                    thrive on the dynamic challenges that web development brings. <br />
+                    My hands-on experience has shaped my ability to navigate through diverse projects, turning concepts
+                    into robust and user-friendly solutions.<br /><br />
+
+                    I'm committed to continuous improvement, proactive problem-solving, and crafting web experiences
+                    that make a lasting impact. Let's collaborate and bring your web ideas to life!
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Tech stack section -->
+    <div class="container-fluid techstack text-center mt-4" id="techstack">
+        <h1 class='fw-bold blue_letter'>Tech <span class='red_letter'>Stack</span></h1>
+        <h1 class='custom-h mx-auto'></h1>
+        <div class='fw-semibold fs-5 text-light rounded-2 p-2 mt-5 d-inline-block'>FRONTEND</div>
+        <div class="row d-flex justify-content-center mt-3">
+            <div class="col-2 technology mt-2  rounded-3 ms-3 text-center">
+                <img src="./images/html.svg" width=80 height=80 alt="HTML" /><br />
+                <h5 class='text-light mt-3'>HTML</h5>
+            </div>
+            <div class="col-2 technology mt-2 rounded-3 ms-3 text-center">
+                <img src="./images/css.svg" width=80 height=80 alt="css" /><br />
+                <h5 class='text-light mt-3'>CSS</h5>
+            </div>
+            <div class="col-2 technology mt-2 rounded-3 ms-3 text-center">
+                <img src="./images/bootstrap.svg" width=80 height=80 alt="bs" /><br />
+                <h5 class='text-light mt-3'>Bootstrap</h5>
+            </div>
+            <div class="col-2 technology mt-2 rounded-3 ms-3 text-center">
+                <img src="./images/javascript.svg" width=80 height=80 alt="js" /><br />
+                <h5 class='text-light mt-3'>Javascript</h5>
+            </div>
+            <div class="col-2 technology mt-2 rounded-3 ms-3 text-center">
+                <img src="./images/jquery-1.svg" width=80 height=80 alt="jq" /><br />
+                <h5 class='text-light mt-3'>JQuery</h5>
+            </div>
+            <div class="col-2 technology mt-2 rounded-3 ms-3 text-center">
+                <img src="./images/react.svg" width=80 height=80 alt="react" /><br />
+                <h5 class='text-light mt-3'>React</h5>
+            </div>
+            <div class="col-2 technology mt-2 rounded-3 ms-3 text-center">
+                <img src="./images/git.svg" width=80 height=80 alt="git" /><br />
+                <h5 class='text-light mt-3'>Git</h5>
+            </div>
+        </div>
+        <div class='fw-semibold fs-5 text-light rounded-2 p-2 mt-5 d-inline-block'>BACKEND</div>
+        <div class="row d-flex justify-content-center mt-3">
+            <div class="col-lg-2 technology mt-2 rounded-3 ms-4 text-center">
+                <img src="./images/nodejs-icon.svg" width=80 height=80 alt="node" /><br />
+                <h5 class='text-light mt-3'>Node js</h5>
+            </div>
+            <div class="col-lg-2 technology mt-2 rounded-3 ms-4 text-center">
+                <img src="./images/mongoDB.svg" width=80 height=80 alt="mpngodb" /><br />
+                <h5 class='text-light mt-3'>MongoDB</h5>
+            </div>
+            <div class="col-lg-2 technology mt-2 rounded-3 ms-4 text-center">
+                <img src="./images/new-php-logo.svg" width=80 height=80 alt="php" /><br />
+                <h5 class='text-light mt-3'>PHP</h5>
+            </div>
+            <div class="col-lg-2 technology mt-2 rounded-3 ms-4 text-center">
+                <img src="./images/mysql-ar21.svg" width=80 height=80 alt="mysql" /><br />
+                <h5 class='text-light mt-3'>MySQL</h5>
+            </div>
+            <div class="col-lg-2 technology mt-2 rounded-3 ms-4 text-center">
+                <img src="./images/express-js-icon.svg" width=80 height=80 alt="express" /><br />
+                <h5 class='text-light mt-3'>Express</h5>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="container-fluid footer py-2 mt-5" id="footer">
+        <div class="heading d-flex justify-content-center mt-3 fs-2">
+            <div class="fw-bold fs-1">
+                <span class="blue_letter">Take a</span>
+                <span class="red_letter"> Coffee </span>
+                <span class="blue_letter">And</span>
+                <span class="red_letter"> Chat </span>
+                <span class="blue_letter">with me</span>
+            </div>
+        </div>
+        <div class="w-50 mx-auto mt-0 custom-h"></div>
+        <div class="contact d-flex flex-column justify-content-center mt-5 ">
+            <div class="contact_link d-flex justify-content-center">
+                <div class="">
+                    <div class="">
+                        <i class="fa-brands fa-linkedin" style="color:#1a202c"></i>
+                        <a class="blue_letter ms-2" href="https://www.linkedin.com/in/vaishnavimuley">Linkedin</a>
+                    </div>
+                    <div class="mt-2">
+                        <i class="fa-brands fa-github" style="color: #1a202c"></i>
+                        <a class="blue_letter ms-2" href="https://github.com/VMuleyDevops/projects">Github</a>
+                    </div>
+                </div>
+                <div class="ms-5">
+                    <div class="">
+                        <i class="fa-solid fa-envelope" style="color:#1a202c"></i>
+                        <a class="blue_letter ms-2" href="mailto:vaishnavi.muley44@gmail.com">Gmail</a>
+                    </div>
+                    <div class="mt-2">
+                        <i class="fa-solid fa-phone" style="color:#1a202c"></i>
+                        <a class="blue_letter ms-2" href="tel:+9370645234">9370645234</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_form mt-3 mx-auto">
+                <input type="text" placeholder="Full Name" class="mt-2 text-dark"><br>
+                <input type="text" placeholder="Email" class="mt-2 text-dark" /><br />
+                <textarea placeholder="Type Your Message" class="mt-2 text-dark"></textarea><br />
+                <button type="submit" class="border-0 text-light mt-1">Send</button>
+            </div>
+        </div>
+        <div class="footer_line mt-5 text-center">
+            Designed and Developed by Vaishnavi Muley &copy; 2023. All rights reserved.
+        </div>
+    </div>
+    <!-- top arrow -->
+    <div class="top_arrow rounded-5 d-flex d-none justify-content-center align-items-center" id="scrollToTopBtn"
+        onclick="scrollToTop()">
+        <i class="fa-solid fa-2x fa-arrow-up" style="color:white;"></i>
+    </div>
+    <!-- fixed left side social links  -->
+    <div class="links position-fixed">
+        <a href="https://www.linkedin.com/in/vaishnavimuley/">
+            <i class="fa-brands fa-2x fa-linkedin-in" style="color: #000000;"></i>
+        </a>
+        <a href="mailto:vaishnavi.muley44@gmail.com">
+            <i class="fa-regular fa-2x fa-envelope" style="color: #000000;"></i>
+        </a>
+        <a href="https://github.com/VMuleyDevops/projects">
+            <i class="fa-brands fa-2x fa-github" style="color: #000000"></i>
+        </a>
+        <div></div>
+    </div>
+    <script>
+        // Toggler function
+        function toggler() {
+            var togglerIcon = document.getElementById('toggler');
+            var crossIcon = document.getElementById('cross');
+            togglerIcon.classList.add('d-none');
+            crossIcon.classList.remove('d-none');
+        }
+        // function closeNavbar()
+        function closeNavbar() {
+            var togglerIcon = document.getElementById('toggler');
+            var crossIcon = document.getElementById('cross');
+            var navbarCollapse = document.getElementById('navbarSupportedContent');
+
+            navbarCollapse.setAttribute('aria-expanded', 'false');
+
+            var bsCollapse = new bootstrap.Collapse(navbarCollapse);
+            bsCollapse.hide();
+
+            togglerIcon.classList.remove('d-none');
+            crossIcon.classList.add('d-none');
+
+        }
+        // Function to scroll to a specific section
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // scroll to top button
+        window.onscroll = function () {
+            showScrollToTopButton();
+        };
+
+        function showScrollToTopButton() {
+            var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.classList.remove('d-none');
+            } else {
+                scrollToTopBtn.classList.add('d-none');
+
+            }
+        }
+        function scrollToTop() {
+            document.body.scrollTop = 0;  // For Safari
+            document.documentElement.scrollTop = 0;  // For Chrome, Firefox, IE, and Opera
+        }
+    </script>
+</body>
+
+</html>
