@@ -23,6 +23,11 @@
 </head>
 
 <body>
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="loader"></div><br>
+        <h3>Loading...</h3>
+    </div>
     <!-- Navbar -->
     <div class="container-fluid w-100 ">
         <div class="row">
@@ -40,11 +45,9 @@
                         aria-expanded="false" aria-label="Toggle navigation" onclick="toggler()" id="toggler">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <span>
-                        <i class="fa-solid fa-xmark d-none d-md-none fa-3x" id="cross" style="color: #000000;"
-                            onclick="closeNavbar()"></i>
-                    </span>
                     <div>
+                        <i class="fa-solid fa-xmark ms-auto d-none d-md-none fa-3x" id="cross" style="color: #000000;"
+                            onclick="closeNavbar()"></i>
                     </div>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
@@ -195,7 +198,7 @@
             </div>
         </div>
         <div class="row mt-5 d-flex justify-content-evenly">
-            <div class="col-lg-4 mt-md-0 mt-3 d-flex justify-content-center each_video">
+            <div class="col-lg-4 mt-md-2 mt-3 d-flex justify-content-center each_video">
                 <div class="p-3 rounded-3">
                     <video controls autoplay muted>
                         <source src="video/intra.mp4" type="video/mp4">
@@ -204,7 +207,7 @@
                     <h5 class="text-light text-center mt-2">Intra: E-commerce Website</h5>
                 </div>
             </div>
-            <div class="col-lg-4 mt-md-0 mt-3 d-flex justify-content-center each_video">
+            <div class="col-lg-4 mt-md-2 mt-3 d-flex justify-content-center each_video">
                 <div class="p-3 rounded-3">
                     <video controls autoplay muted>
                         <source src="video/search_filter.mp4" type="video/mp4">
@@ -213,7 +216,7 @@
                     <h5 class="text-light text-center mt-2">Searching Movie With Details</h5>
                 </div>
             </div>
-            <div class="col-lg-4 mt-md-0 mt-3 d-flex justify-content-center each_video">
+            <div class="col-lg-4 mt-md-2 mt-3 d-flex justify-content-center each_video">
                 <div class="p-3 rounded-3">
                     <video controls autoplay muted>
                         <source src="video/to_do_list.mp4" type="video/mp4">
@@ -223,8 +226,8 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-md-5 d-flex justify-content-evenly">
-            <div class="col-lg-4 mt-md-0 mt-3 project d-flex justify-content-center each_video">
+        <div class="row mt-lg-5 mt-0 d-flex justify-content-evenly">
+            <div class="col-lg-4 mt-md-2 mt-3 project d-flex justify-content-center each_video">
                 <div class="p-3 rounded-3">
                     <video controls autoplay muted>
                         <source src="video/mock_test.mp4" type="video/mp4">
@@ -233,7 +236,7 @@
                     <h5 class="text-light text-center mt-2">Mock Test Portal</h5>
                 </div>
             </div>
-            <div class="col-lg-4 mt-md-0 mt-3 d-flex justify-content-center each_video">
+            <div class="col-lg-4 mt-md-2 mt-3 d-flex justify-content-center each_video">
                 <div class="p-3 rounded-3">
                     <video controls autoplay muted>
                         <source src="video/employee_data_management.mp4" type="video/mp4">
@@ -242,7 +245,7 @@
                     <h5 class="text-light text-center mt-2">Employee Management System</h5>
                 </div>
             </div>
-            <div class="col-lg-4 mt-md-0 mt-3 project each_video">
+            <div class="col-lg-4 mt-md-2 mt-3 d-flex justify-content-center each_video">
                 <div class="p-3 rounded-3">
                     <video controls autoplay muted>
                         <source src="video/Gitam.mp4" type="video/mp4">
@@ -366,6 +369,11 @@
         <div></div>
     </div>
     <script>
+        // preloader
+        document.addEventListener('DOMContentLoaded', function () {
+            // Hide the preloader
+            document.querySelector('.preloader').style.display = 'none';
+        });
         // Toggler function
         function toggler() {
             var togglerIcon = document.getElementById('toggler');
