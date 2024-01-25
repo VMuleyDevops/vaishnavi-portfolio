@@ -8,7 +8,7 @@
     <meta name="keywords" content="web development, programming, HTML, CSS, Frontend,">
     <meta name="description" content="Portfolio of Vaishnavi Muley">
 
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="32x32" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="32x32">
     <title>Vaishnavi Muley</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -24,59 +24,65 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-light navbar-expand-lg position-fixed w-100 p-2">
-        <div class="container-fluid d-flex justify-content-between">
-            <div class="navbar-brand logo d-flex text-white align-items-center">
-                <img src="images/apple-touch-icon.png" alt="logo">
-                <div class="blue_letter">V</div>
-                <div class="red_letter">aishnavi</div>
-                <div class="blue_letter ms-2">M</div>
-                <div class="red_letter">uley</div>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation" onclick="toggler()" id="toggler" class="ms">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <span>
-                <i class="fa-solid fa-xmark d-none d-md-none fa-3x" id="cross" style="color: #000000;"
-                    onclick="closeNavbar()"></i>
-            </span>
-            <div>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
-                    <li class="nav-item ms-5 fw-semibold text-center">
-                        <a class="nav-link" href="#" onclick="closeNavbar()">HOME</a>
-                    </li>
-                    <li class="nav-item ms-5 fw-semibold text-center">
-                        <a class="nav-link" href="#" onclick="scrollToSection('about',event),closeNavbar()">ABOUT</a>
-                    </li>
-                    <li class="nav-item ms-5 fw-semibold text-center">
-                        <a class="nav-link" href="#"
-                            onclick="scrollToSection('techstack',event),closeNavbar()">TECHSTACK</a>
-                    </li>
-                    <li class="nav-item ms-5 fw-semibold text-center">
-                        <a class="nav-link" href="#"
-                            onclick="scrollToSection('projects',event ),closeNavbar()">PROJECT</a>
-                    </li>
-                    <li class="nav-item ms-5 fw-semibold text-center">
-                        <a class="nav-link" href="#" onclick="scrollToSection('academics',event),closeNavbar()">
-                            ACADEMICS</a>
-                    </li>
-                    <li class="nav-item ms-5 fw-semibold text-center">
-                        <a class="nav-link" href="#" onclick="scrollToSection('footer',event),closeNavbar()">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="container-fluid w-100 ">
+        <div class="row">
+            <nav class="navbar navbar-light navbar-expand-lg position-fixed">
+                <div class="container-fluid d-flex justify-content-between">
+                    <div class="navbar-brand logo d-flex text-white align-items-center">
+                        <img src="images/apple-touch-icon.png" alt="logo">
+                        <div class="blue_letter">V</div>
+                        <div class="red_letter">aishnavi</div>
+                        <div class="blue_letter ms-2">M</div>
+                        <div class="red_letter">uley</div>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" onclick="toggler()" id="toggler">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <span>
+                        <i class="fa-solid fa-xmark d-none d-md-none fa-3x" id="cross" style="color: #000000;"
+                            onclick="closeNavbar()"></i>
+                    </span>
+                    <div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+                            <li class="nav-item ms-5 fw-semibold text-center">
+                                <a class="nav-link" href="#" onclick="closeNavbar()">HOME</a>
+                            </li>
+                            <li class="nav-item ms-5 fw-semibold text-center">
+                                <a class="nav-link" href="#"
+                                    onclick="scrollToSection('about',event),closeNavbar()">ABOUT</a>
+                            </li>
+                            <li class="nav-item ms-5 fw-semibold text-center">
+                                <a class="nav-link" href="#"
+                                    onclick="scrollToSection('techstack',event),closeNavbar()">TECHSTACK</a>
+                            </li>
+                            <li class="nav-item ms-5 fw-semibold text-center">
+                                <a class="nav-link" href="#"
+                                    onclick="scrollToSection('projects',event ),closeNavbar()">PROJECT</a>
+                            </li>
+                            <li class="nav-item ms-5 fw-semibold text-center">
+                                <a class="nav-link" href="#" onclick="scrollToSection('academics',event),closeNavbar()">
+                                    ACADEMICS</a>
+                            </li>
+                            <li class="nav-item ms-5 fw-semibold text-center">
+                                <a class="nav-link" href="#"
+                                    onclick="scrollToSection('footer',event),closeNavbar()">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </div>
     <!-- Intro -->
-    <div class='container-fluid mt-5'>
-        <div class='row intro d-flex'>
+    <div class='container-fluid mt-5 w-100'>
+        <div class='row intro d-flex mt-5'>
             <div class='col-lg-6 order-md-2 d-flex justify-content-center align-items-center mt-sm-1'>
                 <div class='image d-flex justify-content-center align-items-end'>
-                    <img src='./images/emp1.jpg' alt='my photo' />
+                    <img src='./images/emp1.jpg' alt='my photo'>
                 </div>
             </div>
             <div class="col-lg-6 order-md-1 d-flex flex-column justify-content-center mt-md-5">
@@ -84,15 +90,15 @@
                     <div class='blue_letter fs-2 fw-bold mt-3 name'>Hi, I am</div>
                     <div class='blue_letter name fw-bolder mt-3'>Vaishnavi Muley</div>
                     <div class='red_letter fs-3 mt-3 fw-bold name'>Web Developer</div>
-                    <a href="./components/navbar/CV Vaishnavi Muley.pdf" download="CV Vaishnavi Muley.pdf">
-                        <button class="btn btn-danger text-light fs-5 mt-4">Download CV</button>
+                    <a href="CV_Vaishnavi_Muley.pdf" download="CV Vaishnavi Muley.pdf">
+                        <div class="btn btn-danger text-light fs-5 mt-4">Download CV</div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
     <!-- About -->
-    <div class="container-fluid mt-5" id="about">
+    <div class="container-fluid mt-5 w-100" id="about">
         <div class="row">
             <div class="col-12 text-center ">
                 <h1 class='fw-bold red_letter'><span class='blue_letter'>So,</span> Who <span class='blue_letter'>am
@@ -102,85 +108,85 @@
         </div>
         <div class="row">
             <div class="col-md-6 order-md-2  text-left mt-5 ps-4">
-                <p class="text-justify mt-5">
+                <p class="text-justify mt-md-5 mt-2">
                     Hello, I'm Vaishnavi Muley, a results-driven Full-Stack Web Developer deeply immersed in the world
-                    of web development.<br /><br />
+                    of web development.<br><br>
 
                     With practical expertise in JavaScript,Bootstrap5 React.js, HTML5, and CSS3, jQuery.
-                    thrive on the dynamic challenges that web development brings. <br />
+                    thrive on the dynamic challenges that web development brings. <br>
                     My hands-on experience has shaped my ability to navigate through diverse projects, turning concepts
-                    into robust and user-friendly solutions.<br /><br />
+                    into robust and user-friendly solutions.<br><br>
 
                     I'm committed to continuous improvement, proactive problem-solving, and crafting web experiences
                     that make a lasting impact. Let's collaborate and bring your web ideas to life!
                 </p>
             </div>
             <div class="col-md-6 order-md-1 d-flex justify-content-center mt-5">
-                <img src="images/about.jpg" alt="about img" class="h-75">
+                <img src="images/about.jpg" alt="about img" class="h-75 w-100">
             </div>
         </div>
     </div>
     <!-- Tech stack -->
-    <div class="container-fluid techstack text-center py-5" id="techstack">
+    <div class="container-fluid techstack text-center py-5 w-100" id="techstack">
         <h1 class='fw-bold blue_letter'>Tech <span class='red_letter'>Stack</span></h1>
-        <h1 class='custom-h mx-auto'></h1>
+        <p class='custom-h mx-auto'></p>
         <div class='fw-semibold fs-5 text-light rounded-2 p-2 mt-5 d-inline-block'>FRONTEND</div>
         <div class="row d-flex justify-content-center mt-3">
             <div class="col-2 technology mt-2  rounded-3 ms-3 text-center">
-                <img src="./images/html.svg" width=80 height=80 alt="HTML" /><br />
+                <img src="./images/html.svg" width=80 height=80 alt="HTML"><br>
                 <h5 class='text-light mt-3'>HTML</h5>
             </div>
             <div class="col-2 technology mt-2 rounded-3 ms-3 text-center">
-                <img src="./images/css.svg" width=80 height=80 alt="css" /><br />
+                <img src="./images/css.svg" width=80 height=80 alt="css"><br>
                 <h5 class='text-light mt-3'>CSS</h5>
             </div>
             <div class="col-2 technology mt-2 rounded-3 ms-3 text-center">
-                <img src="./images/bootstrap.svg" width=80 height=80 alt="bs" /><br />
+                <img src="./images/bootstrap.svg" width=80 height=80 alt="bs"><br>
                 <h5 class='text-light mt-3'>Bootstrap</h5>
             </div>
             <div class="col-2 technology mt-2 rounded-3 ms-3 text-center">
-                <img src="./images/javascript.svg" width=80 height=80 alt="js" /><br />
+                <img src="./images/javascript.svg" width=80 height=80 alt="js"><br>
                 <h5 class='text-light mt-3'>Javascript</h5>
             </div>
             <div class="col-2 technology mt-2 rounded-3 ms-3 text-center">
-                <img src="./images/jquery-1.svg" width=80 height=80 alt="jq" /><br />
+                <img src="./images/jquery-1.svg" width=80 height=80 alt="jq"><br>
                 <h5 class='text-light mt-3'>JQuery</h5>
             </div>
             <div class="col-2 technology mt-2 rounded-3 ms-3 text-center">
-                <img src="./images/react.svg" width=80 height=80 alt="react" /><br />
+                <img src="./images/react.svg" width=80 height=80 alt="react"><br>
                 <h5 class='text-light mt-3'>React</h5>
             </div>
             <div class="col-2 technology mt-2 rounded-3 ms-3 text-center">
-                <img src="./images/git.svg" width=80 height=80 alt="git" /><br />
+                <img src="./images/git.svg" width=80 height=80 alt="git"><br>
                 <h5 class='text-light mt-3'>Git</h5>
             </div>
         </div>
         <div class='fw-semibold fs-5 text-light rounded-2 p-2 mt-5 d-inline-block'>BACKEND</div>
         <div class="row d-flex justify-content-center mt-3">
             <div class="col-lg-2 technology mt-2 rounded-3 ms-4 text-center">
-                <img src="./images/nodejs-icon.svg" width=80 height=80 alt="node" /><br />
+                <img src="./images/nodejs-icon.svg" width=80 height=80 alt="node"><br>
                 <h5 class='text-light mt-3'>Node js</h5>
             </div>
             <div class="col-lg-2 technology mt-2 rounded-3 ms-4 text-center">
-                <img src="./images/mongoDB.svg" width=80 height=80 alt="mpngodb" /><br />
+                <img src="./images/mongoDB.svg" width=80 height=80 alt="mpngodb"><br>
                 <h5 class='text-light mt-3'>MongoDB</h5>
             </div>
             <div class="col-lg-2 technology mt-2 rounded-3 ms-4 text-center">
-                <img src="./images/new-php-logo.svg" width=80 height=80 alt="php" /><br />
+                <img src="./images/new-php-logo.svg" width=80 height=80 alt="php"><br>
                 <h5 class='text-light mt-3'>PHP</h5>
             </div>
             <div class="col-lg-2 technology mt-2 rounded-3 ms-4 text-center">
-                <img src="./images/mysql-ar21.svg" width=80 height=80 alt="mysql" /><br />
+                <img src="./images/mysql-ar21.svg" width=80 height=80 alt="mysql"><br>
                 <h5 class='text-light mt-3'>MySQL</h5>
             </div>
             <div class="col-lg-2 technology mt-2 rounded-3 ms-4 text-center">
-                <img src="./images/express-js-icon.svg" width=80 height=80 alt="express" /><br />
+                <img src="./images/express-js-icon.svg" width=80 height=80 alt="express"><br>
                 <h5 class='text-light mt-3'>Express</h5>
             </div>
         </div>
     </div>
     <!-- projects -->
-    <div class="container-fluid mt-5" id="projects">
+    <div class="container-fluid mt-5 w-100" id="projects">
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class='fw-bold red_letter'><span class='blue_letter'>Explore </span>My <span
@@ -191,7 +197,7 @@
         <div class="row mt-5 d-flex justify-content-evenly">
             <div class="col-lg-4 mt-md-0 border border-danger mt-3 d-flex justify-content-center each_video">
                 <div class="p-3 border border-primary rounded-3">
-                    <video width="100%" height="80%" controls autoplay muted>
+                    <video controls autoplay muted>
                         <source src="video/intra.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -200,8 +206,8 @@
             </div>
             <div class="col-lg-4 mt-md-0 mt-3 d-flex justify-content-center each_video">
                 <div class="p-3 rounded-3">
-                    <video width="100%" height="80%" controls autoplay muted>
-                        <source src="video/search filter.mp4" type="video/mp4">
+                    <video controls autoplay muted>
+                        <source src="video/search_filter.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <h5 class="text-light text-center mt-2">Searching Movie With Details</h5>
@@ -209,8 +215,8 @@
             </div>
             <div class="col-lg-4 mt-md-0 mt-3 d-flex justify-content-center each_video">
                 <div class="p-3 rounded-3">
-                    <video width="100%" height="80%" controls autoplay muted>
-                        <source src="video/to do list.mp4" type="video/mp4">
+                    <video controls autoplay muted>
+                        <source src="video/to_do_list.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <h5 class="text-light text-center mt-2">Advance To do List</h5>
@@ -220,8 +226,8 @@
         <div class="row mt-md-5 d-flex justify-content-evenly">
             <div class="col-lg-4 mt-md-0 mt-3 project d-flex justify-content-center each_video">
                 <div class="p-3 rounded-3">
-                    <video width="100%" height="80%" controls autoplay muted>
-                        <source src="video/mock test.mp4" type="video/mp4">
+                    <video controls autoplay muted>
+                        <source src="video/mock_test.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <h5 class="text-light text-center mt-2">Mock Test Portal</h5>
@@ -229,8 +235,8 @@
             </div>
             <div class="col-lg-4 mt-md-0 mt-3 d-flex justify-content-center each_video">
                 <div class="p-3 rounded-3">
-                    <video width="100%" height="80%" controls autoplay muted>
-                        <source src="video/employee data management.mp4" type="video/mp4">
+                    <video controls autoplay muted>
+                        <source src="video/employee_data_management.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <h5 class="text-light text-center mt-2">Employee Management System</h5>
@@ -238,7 +244,7 @@
             </div>
             <div class="col-lg-4 mt-md-0 mt-3 project each_video">
                 <div class="p-3 rounded-3">
-                    <video width="100%" height="80%" controls autoplay muted>
+                    <video controls autoplay muted>
                         <source src="video/Gitam.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -248,7 +254,7 @@
         </div>
     </div>
     <!-- Academics -->
-    <div class="container-fluid mt-5" id="academics">
+    <div class="container-fluid mt-5 w-100" id="academics">
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class='fw-bold blue_letter'>Acade<span class='red_letter'>mics</span></h1>
@@ -293,9 +299,9 @@
         </div>
     </div>
     <!-- Footer -->
-    <div class="container-fluid footer py-2 mt-5" id="footer">
-        <div class="heading d-flex justify-content-center mt-3 footer_heading">
-            <div class="fw-bold">
+    <div class="container-fluid footer py-2 mt-5 w-100" id="footer">
+        <div class="heading d-flex mt-3 justify-content-center footer_heading">
+            <div class="fw-bold text-center">
                 <span class="blue_letter">Take a</span>
                 <span class="red_letter"> Coffee </span>
                 <span class="blue_letter">And</span>
@@ -330,7 +336,7 @@
             <div class="contact_form mt-3 mx-auto">
                 <form action="https://formspree.io/f/xkndordn" method="post">
                     <input type="text" placeholder="Full Name" name="name" class="mt-2 text-dark" required><br>
-                    <input type="text" placeholder="Email" name="email" class="mt-2 text-dark" required /><br />
+                    <input type="text" placeholder="Email" name="email" class="mt-2 text-dark" required><br>
                     <textarea placeholder="Type Your Message" name="msg" class="mt-2 py-1 text-dark"
                         required></textarea><br>
                     <button type="submit" class="border-0 text-light mt-1">Send</button>
